@@ -1,0 +1,95 @@
+
+<link rel="stylesheet" href="main.css" />
+<div class="container1">
+    <div id="h1">Tic-Tac-Toe
+      
+      </div>
+    
+    
+    <!--Only here for the FireWorks-->
+    <div id="fireworks">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    
+    
+    
+    <!--StartGame-Button-->
+    <div id="headerAndButtons">
+      <button class="buttons endButton" id="startGameButton" type="submit">Start Game</button>
+    </div>
+    
+    <!--Shows Output (Next player, who won etc.)-->
+    <p id='nextTurn'>Game not yet started</p>
+    
+    <!--Makes the settings go left and the field go in the middle-->
+    <div class="container">
+      <div class="child">
+        <!--Toggle Switches & Labels-->
+        <div class ="settings">
+          <div id="ergebnis" class="ergebnis">
+            Human Player Symbol <span id="statusHuman"></span>
+          </div>
+          
+          <label id="xOrOChoiceLabel" for "switch">"o"</label>
+          <label class="switch">
+            <input id ="xOrOChoice" type="checkbox" onclick='changeColor("xOrOChoice", "xOrOChoiceLabel", "xOrOChoiceLabel2")'>
+            <span class="slider round"></span>
+          </label>
+          <label id="xOrOChoiceLabel2" for "switch">"x"</label>
+    
+          <div class="placeholder">
+            <body>Text</body>
+          </div>
+          
+          <div id="ergebnis" class="ergebnis">
+            Starting Symbol <span id="statusStarting"></span>
+          </div>
+          <label class="labels" id="starterChoiceLabel" for "switch">"o"</label>
+          <label class="switch">
+            <input id ="starterChoice" type="checkbox" onclick='changeColor("starterChoice", "starterChoiceLabel", "starterChoiceLabel2")'>
+            <span class="slider round"></span>
+          </label>
+          <label id="starterChoiceLabel2" for "switch">"x"</label>
+          
+          <div class="placeholder">
+            <body>Text</body>
+          </div>
+          
+          <div id="ergebnis" class="ergebnis">
+            Computer Difficulty <span id="statusEnemy"></span>
+          </div>
+          <label id="enemyChoiceLabel" for "switch">Easy</label>
+          <label class="switch">
+            <input id ="enemyChoice" type="checkbox" onclick='changeColor("enemyChoice", "enemyChoiceLabel", "enemyChoiceLabel2")'>
+            <span class="slider round"></span>
+          </label>
+          <label id="enemyChoiceLabel2" for "switch">Hard</label>
+        </div>
+        
+      </div>
+      
+      <div class="child">
+        </div>
+      
+      <!--Actual Game-->
+      <div class="child">
+        <div class="game--container">
+          <div id="cell0" class="cell"></div>
+          <div id="cell1" class="cell"></div>
+          <div id="cell2" class="cell"></div>
+          <div id="cell3" class="cell"></div>
+          <div id="cell4" class="cell"></div>
+          <div id="cell5" class="cell"></div>
+          <div id="cell6" class="cell"></div>
+          <div id="cell7" class="cell"></div>
+          <div id="cell8" class="cell"></div>
+        </div>
+        
+        <div class="child">
+        </div>
+        
+    </div>
+    </div>
+
+    <script src="main.js"></script>
